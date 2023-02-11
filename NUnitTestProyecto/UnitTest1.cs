@@ -38,9 +38,11 @@ namespace NUnitTestProyecto
         }
 
 
+
         /// <summary>
         /// Valida que el tipo devuelto por el metodo ObtenerLibros sea de tipo List<DetalleLibro>
         /// </summary>
+        /// <param name="isbn"></param>
         [Test]
         [TestCase(200099220)]
         public void ObtenerLibrosISBN(int isbn)

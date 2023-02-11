@@ -56,7 +56,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:GridView ID="gvLibros" runat="server" AutoGenerateColumns="false" CssClass="Grid"
+            <asp:GridView ID="gvLibros" runat="server" AutoGenerateColumns="false" CssClass="Grid" Width="500px"
                 DataKeyNames="ISBN" OnRowDataBound="OnRowDataBound">
                 <Columns>
                     <asp:TemplateField>
@@ -65,17 +65,17 @@
                             <asp:Panel ID="pnlLibros" runat="server" Style="display: none">
                                 <asp:GridView ID="gvLibrosDetalle" runat="server" AutoGenerateColumns="false" CssClass="ChildGrid" Width="100%">
                                     <Columns>
-                                        <asp:BoundField ItemStyle-Width="150px" DataField="NombreAutor" HeaderText="Nombre Autor" />
-                                        <asp:BoundField ItemStyle-Width="150px" DataField="ApellidoAutor" HeaderText="Apellido Autor" />
-                                        <asp:BoundField ItemStyle-Width="150px" DataField="Editorial" HeaderText="Editorial" />
-                                        <asp:BoundField ItemStyle-Width="150px" DataField="NumPaginas" HeaderText="No. Paginas" />
+                                        <asp:BoundField ItemStyle-Width="250px" DataField="NombreAutor" HeaderText="Nombre Autor" />
+                                        <asp:BoundField ItemStyle-Width="250px" DataField="ApellidoAutor" HeaderText="Apellido Autor" />
+                                        <asp:BoundField ItemStyle-Width="250px" DataField="Editorial" HeaderText="Editorial" />
+                                        <asp:BoundField ItemStyle-Width="250px" DataField="NumPaginas" HeaderText="No. Paginas" />
                                     </Columns>
                                 </asp:GridView>
                             </asp:Panel>
                         </ItemTemplate>
                     </asp:TemplateField>
-                    <asp:BoundField ItemStyle-Width="150px" DataField="ISBN" HeaderText="ISBN" />
-                    <asp:BoundField ItemStyle-Width="150px" DataField="Titulo" HeaderText="Titulo" />                    
+                    <asp:BoundField ItemStyle-Width="450px" DataField="ISBN" HeaderText="ISBN" />
+                    <asp:BoundField ItemStyle-Width="450px" DataField="Titulo" HeaderText="Titulo" />                    
                 </Columns>
             </asp:GridView>
         </div>
