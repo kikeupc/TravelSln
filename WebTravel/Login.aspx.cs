@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -27,7 +28,9 @@ namespace WebTravel
 
         private bool LoginCorrecto(string Usuario, string Contrasena)
         {
-            if (Usuario.Equals("travel") && Contrasena.Equals("travel.123456"))
+            string usuario = ConfigurationManager.AppSettings["usuario"];
+            string contrasena = ConfigurationManager.AppSettings["contrasena"];
+            if (Usuario.Equals(usuario) && Contrasena.Equals(contrasena))
                 return true; return false;
         }
     }
